@@ -1,0 +1,44 @@
+ion-item{
+    --inner-padding-end: 0px;
+    --padding-start:0px
+}
+
+h2, h3 {
+    font-weight: 450;
+    font-size: 1rem;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+ion-text{
+    padding: 0;
+}
+
+ion-content{
+    background-color: black;
+}
+
+div.main{
+    width: 100%;
+    height: auto;
+    background-color: #fcfbf7;
+}
+
+.about-box{
+    background-color: #fff;
+    font-weight: 400;
+}
+.kassen-uge{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kok-avatar{
+    width: 50px;
+    height: 50px;
+}
+

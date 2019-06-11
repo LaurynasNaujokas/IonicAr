@@ -1,0 +1,57 @@
+<!-- Top -->
+<ion-header class="top-bar">
+    <ion-toolbar color="secondary">
+      <ion-title class="top-bar-title">
+        Aarstiderne
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Top End -->
+
+<ion-content>
+  <div color="primary" class="background">
+    <!--Header Image Start-->
+     <img src="http://www.fodevarefokus.dk/wp-content/uploads/sites/4/aarstiderne-1.jpg">
+    <!--Header Image End-->
+
+    <!--Info Card Start-->
+     <ion-card class="aarstiderne-card">  
+          <ion-card-title class="aarstiderne-card-title">
+            Aarstiderne er din nemme vej til nye hverdagsretter
+          </ion-card-title>   
+        <ion-card-content class="aarstiderne-card-content">
+          Hver uge sammensaetter vores kokke nye retter i din maltidskasse.
+          Du far alt, hvad du skal bruge til 3, 4 eller 5 komplette maltider.
+          Dvs. grontsager, kolonialvarer, krydderier, kod/fisk og smagsgivere
+        </ion-card-content>
+
+        <!--Button Start-->
+        <div class="button-find-opskrift">
+              <ion-button class="opskrift-button" data-="" id="" expand="block">Sadan fungerer det</ion-button>
+        </div>
+        <!--Button End-->
+      </ion-card>
+      <!--Info Card End-->
+
+      <!--Boxes list Start-->
+      <ion-list>
+        <ion-row>
+          <ion-col>
+            <ion-item detail="false" *ngFor="let box of boxes" [routerLink]="['./', box.boxId]" >
+                <ion-avatar slot="start">
+                  <ion-img [src]="box.imageUrl"></ion-img>
+                </ion-avatar>
+                <ion-label text-wrap>
+                    <ion-text>
+                      <h3>{{box.title}}</h3>
+                    </ion-text>
+                      <ion-label><p color="test">{{box.description}}</p></ion-label>
+                </ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+      <!--Boxes List End-->
+     
+  </div>
+</ion-content>

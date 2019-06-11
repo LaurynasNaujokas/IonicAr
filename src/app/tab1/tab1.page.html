@@ -1,0 +1,60 @@
+
+<!-- Top Start-->
+<ion-header class="top-bar">
+  <ion-toolbar  color="secondary">
+    <ion-title class="top-bar-title">
+      Insipration
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- Top End -->
+
+<ion-content>
+  <!--Using ngFor to go through the list [Start] -->
+  <!--Service was created-->
+  <ion-item class="ion-margin-bottom" *ngFor="let kokker of kokkers" >
+    <ion-grid class="ion-no-padding" >
+      <ion-row>
+        <ion-col class="ion-no-padding">
+            <!--Banner Image and text content Start-->
+          <div class="container">
+            <ion-card class="ion-no-padding ion-no-margin">
+              <ion-card-header class="ion-no-padding ion-no-margin">
+                <div class=box-shadow>
+                <img class="banner-image" src="{{kokker.imageUrl}}">
+                </div>
+              </ion-card-header>
+            </ion-card>        
+            <ion-label class="top-left">Madplan</ion-label>
+            <ion-label class="top-right">Uge {{kokker.ugeNr}}</ion-label>
+            <div class="centered"><h2>{{kokker.boxType}}</h2></div>
+          </div>
+            <!--Banner Image and text content End-->
+            <!--Avatar icon start-->
+                <img src="{{kokker.avatar}}" class="avatar-image">
+            <!--Avatar icon end-->
+        </ion-col>
+      </ion-row>
+      <!--Info about Author Start-->
+      <ion-row class="author-name">
+        <ion-col>
+          <h2 id="author-name" class="ion-text-center ion-no-margin">Kassen er lavet af <span>{{kokker.firstName}} {{kokker.lastName}}</span></h2>
+        </ion-col>
+      </ion-row>
+      <!--Info about Autho End-->
+      <!--Fetching recepieList Start-->
+            <ion-list *ngFor="let ig of kokker.recepieList" class="ion-no-margin">
+                <ion-item detail="false" >
+                         <p>{{ ig }}</p>
+                </ion-item>
+            </ion-list>  
+      <!--Fetching recepieList End-->
+
+    </ion-grid>
+  </ion-item>  
+  <!--Using ngFor to go through list [End]-->
+</ion-content>
+
+
+
+

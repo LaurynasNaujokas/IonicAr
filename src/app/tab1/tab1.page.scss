@@ -1,0 +1,97 @@
+
+ion-content{
+    background-color: red;
+  }
+
+ion-item{
+    --inner-padding-end: 0px;
+    --padding-start:0px
+}
+
+ion-card, ion-card-header{
+  border-radius: 0;
+}
+
+ion-label{
+  font-weight: 600;
+}
+
+p{
+  padding: 0 10px 0 10px;
+}
+
+span{
+  color: red;
+}
+
+.box-shadow {
+  position: relative;
+  text-align: center;
+}
+
+.box-shadow::after {
+  -webkit-box-shadow: inset 2px 200px 73px -28px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 2px 200px 73px -28px rgba(0,0,0,0.3);
+  box-shadow: inset 2px 200px 73px -28px rgba(0,0,0,0.3);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.box-shadow img {
+  max-width: 100%;
+  width: auto;
+}
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .author-name{
+    height: 50px;
+    background-color:#f9f9f9;
+  }
+  
+  .ion-text-center{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .avatar-image{
+    width: 40px;
+    height: 40px;
+    display: block;
+    border: 2px solid #ffffff;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }

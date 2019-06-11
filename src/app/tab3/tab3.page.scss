@@ -1,0 +1,46 @@
+div.background{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+/* Card styling and positioning */
+.aarstiderne-card{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    color: black;
+    text-align: left;
+}
+
+.aarstiderne-card-title{
+    color: black;
+    font-size: 1.3rem;
+    text-align: start;  
+    padding: 10px 20px 20px 10px;
+}
+
+.aarstiderne-card-content{
+    display: flex;
+    text-align: left;
+    font-size: 1rem;
+    padding: 1px 20px 20px 10px;
+}
+
+/* Button styling positioning */
+.opskrift-button{
+    width: 60%;
+    border-radius: 5px;
+}
+
+.button-find-opskrift{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0;
+
+}
+
+p{
+    color: black;
+}

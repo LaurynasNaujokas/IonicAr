@@ -1,0 +1,26 @@
+// App Styles
+// ----------------------------------------------------------------------------
+// Put style rules here that you want to apply to the entire application. These 
+// styles are for the entire app and not just one component. Additionally, this 
+// file can hold Sass mixins, functions, and placeholder classes to be imported 
+// and used throughout the application.
+
+*, html, body{
+    font-family:"Gotham Rounded A","Gotham Rounded B",Calibri,Helvetica,Arial,Sans-Serif;
+  }
+
+  ion-toolbar{
+    background-color: #0D7548;
+  }
+
+ion-title{
+    background-color: #0D7548;
+    color: white;
+    font-weight: 400;
+  }
+  ion-card-title {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+  }
+  
